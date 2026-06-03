@@ -3,7 +3,7 @@
 export default function QRCodeGenerator() {
   const configuredBase = import.meta.env.VITE_PUBLIC_URL || (typeof window !== 'undefined' ? window.location.origin : 'https://yourdomain.com');
   const base = configuredBase.replace(/\/$/, '');
-  const qrUrl = `${base}/menu`;
+  const qrUrl = base;
   // Use a simple public QR image generator for printed codes so scanning from tables
   // reliably points to the configured public URL without bundler import issues.
   const qrImageSrc = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(
