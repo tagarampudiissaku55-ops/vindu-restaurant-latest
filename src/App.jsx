@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 function Footer() {
   return (
     <footer className="border-t border-white/10 px-4 py-8 text-center text-sm text-white/55 sm:px-6">
-      <p>© 2026 Vindu Restaurant. All Rights Reserved.</p>
+      <p>© 2026 - Vindu Restaurant. All Rights Reserved.</p>
       <p className="mt-2 text-xs text-white/45">Email: <a href="mailto:vindurestaurant4@gmail.com" className="text-saffron hover:underline">vindurestaurant4@gmail.com</a></p>
       <p className="mt-1 text-xs text-white/45">Instagram: <a href="https://www.instagram.com/vindu.restaurant" target="_blank" rel="noreferrer" className="text-saffron hover:underline">@vindu.restaurant</a></p>
     </footer>

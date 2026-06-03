@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { BadgeIndianRupee, ChefHat, Clock3, Leaf, MessageCircle, Truck } from 'lucide-react';
 import Hero from '../components/Hero';
+import QRCodeGenerator from '../components/QRCodeGenerator';
 import { restaurantInfo } from '../data/menuData';
 
 const features = [
@@ -82,7 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QR code component removed to avoid runtime issues; users can open the Menu page */}
+      <QRCodeGenerator />
     </>
   );
 }
