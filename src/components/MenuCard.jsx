@@ -4,7 +4,7 @@ const fallbackImage = 'https://images.unsplash.com/photo-1604908177522-44faad03b
 
 export default function MenuCard({ item, index, whatsapp }) {
   const imageUrl = item.image || fallbackImage;
-  const orderMessage = encodeURIComponent(`Hello Vindu Restaurant, I want to order ${item.name}. Please help me place my order.`);
+  const orderMessage = encodeURIComponent(`Hello Vindu Restaurant, I want to order ${item.name}. Please help me place my order.Please Enter Table No:`);
   const orderUrl = `https://wa.me/${whatsapp}?text=${orderMessage}`;
 
   return (
